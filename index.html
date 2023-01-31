@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div>
-      <ol class="song-list"></ol>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS 35</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div>
+    <ol class="song-list"></ol>
+  </div>
+
+  <div>
+    <dialog id="dialog">
+      <form method="dialog">
+        <p>Тут повинен бути текст</p>
+        <button>Закрити</button>
+      </form>
+    </dialog>
+
+    <p>
+      <button id="showDialog">Відкрити</button>
+    </p>
+
+  </div>
+
+  <div>
+    <div class="traffic-light">
+      <span class="red"></span>
+      <span class="yellow"></span>
+      <span class="green"></span>
     </div>
+    <button id="changeColor">Клік</button>
+  </div>
 
-    <div>
-      <dialog id="dialog">
-        <form method="dialog">
-          <p>Тут повинен бути текст</p>
-          <button>Закрити</button>
-        </form>
-      </dialog>
+</body>
 
-      <p>
-        <button id="showDialog">Відкрити</button>
-      </p>
-    </div>
-  </body>
+<script src="./script.js"></script>
 
-  <script src="./script.js"></script>
 </html>

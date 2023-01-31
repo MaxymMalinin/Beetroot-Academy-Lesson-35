@@ -66,3 +66,32 @@ buttonEl.addEventListener('click', () => {
 /*
   3. Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
 */
+
+const redEl = document.querySelector('.red');
+const yellowEl = document.querySelector('.yellow');
+const greenEl = document.querySelector('.green');
+const buttonTraffic = document.getElementById('changeColor');
+
+buttonTraffic.addEventListener('click', () => {
+  if (getComputedStyle(redEl).backgroundColor === 'rgb(255, 0, 0)') {
+    redEl.style.backgroundColor = 'gray';
+    yellowEl.style.backgroundColor = 'yellow';
+    return;
+  }
+
+  if (getComputedStyle(yellowEl).backgroundColor === 'rgb(255, 255, 0)') {
+    yellowEl.style.backgroundColor = 'gray';
+    greenEl.style.backgroundColor = 'green';
+    return;
+  }
+
+  if (getComputedStyle(greenEl).backgroundColor === 'rgb(0, 128, 0)') {
+    greenEl.style.backgroundColor = 'gray';
+    redEl.style.backgroundColor = 'red';
+    return;
+  }
+});
+
+console.log(getComputedStyle(redEl).backgroundColor);
+console.log(getComputedStyle(yellowEl).backgroundColor);
+console.log('green');
