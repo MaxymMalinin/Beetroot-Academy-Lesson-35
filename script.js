@@ -87,11 +87,8 @@ buttonTraffic.addEventListener('click', () => {
 
   if (getComputedStyle(greenEl).backgroundColor === 'rgb(0, 128, 0)') {
     greenEl.style.backgroundColor = 'gray';
+
     redEl.style.backgroundColor = 'red';
     return;
   }
 });
-
-console.log(getComputedStyle(redEl).backgroundColor);
-console.log(getComputedStyle(yellowEl).backgroundColor);
-console.log('green');
